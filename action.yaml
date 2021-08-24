@@ -22,3 +22,9 @@ inputs:
   awsSecretKey:
     description: 'aws secret key'
     required: true
+  clusterName:
+    description: 'EKS cluster name'
+    required: true
+  command:
+    description: 'helm command'
+    required: true
