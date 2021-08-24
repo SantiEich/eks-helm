@@ -8,6 +8,8 @@ runs:
     - ${{ inputs.region }}
     - ${{ inputs.awsAccessKey }}
     - ${{ inputs.awsSecretKey }}
+    - ${{ inputs.clusterName }}
+    - ${{ inputs.command }}
 branding:
   icon: 'terminal'
   color: 'blue'
