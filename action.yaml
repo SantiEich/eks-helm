@@ -1,9 +1,24 @@
-name: 'eks & helm'
+name: 'EKS & Helm'
 author: 'Santieich'
 description: 'A Github action for using helm to deploy applications to EKS cluster'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.region }}
+    - ${{ inputs.awsAccessKey }}
+    - ${{ inputs.awsSecretKey }}
 branding:
-  icon: 'truck'
+  icon: 'terminal'
   color: 'blue'
+inputs:
+  region:
+    description: 'us-east-1 or us-east-2'
+    required: false
+    default: us-east-2
+  awsAccessKey:
+    description: 'aws access key'
+    required: true
+  awsSecretKey:
+    description: 'aws secret key'
+    required: true
