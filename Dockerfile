@@ -10,11 +10,7 @@ RUN pip install --upgrade awscli==1.18.39
 RUN apk add curl
 RUN apk add git
 RUN apk add bash
-RUN apk add nodejs
-RUN apk add npm
 RUN apk add jq
-RUN npm install -g yarn
-RUN npm install -g webpack
 RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
 RUN chmod +x ./kubectl
 RUN mv ./kubectl /usr/local/bin/kubectl
