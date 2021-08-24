@@ -1,9 +1,11 @@
 FROM docker:19.03.5
 
+ENV VERIFY_CHECKSUM=false
 RUN apk add --no-cache \
 		ca-certificates \   
         py-pip \
-        zip
+        zip \
+        openssl
 RUN pip install --upgrade awscli==1.18.39
 RUN apk add curl
 RUN apk add git
