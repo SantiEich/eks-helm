@@ -1,0 +1,9 @@
+name: 'eks & helm'
+author: 'Santieich'
+description: 'A Github action for using helm to deploy applications to EKS cluster'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'truck'
+  color: 'blue'
