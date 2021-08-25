@@ -20,13 +20,13 @@ inputs:
     default: us-east-2
   awsAccessKey:
     description: 'aws access key'
-    required: true
+    required: false
   awsSecretKey:
     description: 'aws secret key'
-    required: true
+    required: false
   clusterName:
     description: 'EKS cluster name'
-    required: true
+    required: false
   command:
     description: 'helm command'
     required: true
