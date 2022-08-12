@@ -18,4 +18,4 @@ RUN curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master
 RUN chmod 700 get_helm.sh
 RUN ./get_helm.sh
 RUN helm plugin install https://github.com/hypnoglow/helm-s3.git
-
+RUN helm plugin install https://github.com/chartmuseum/helm-push
